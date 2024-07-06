@@ -5,38 +5,65 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-/* Ensure the main tag uses Flexbox and arranges its children in a row */
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+/* Main container flexbox settings */
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
     height: auto;
     width: auto;
+    background-color: #ffffff;
 }
 
-/* Assigning flex properties to article and aside */
+/* Article and aside flex properties */
 article {
-    flex: 2;  /* Takes 2/3 of the width */
+    flex: 2;
     overflow-y: auto;
+    padding: 20px;
+    border-right: 1px solid #ddd;
 }
 
 aside {
-    flex: 1;  /* Takes 1/3 of the width */
+    flex: 1;
     overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-/* Basic styles for header and footer */
-header, footer {
-    background-color: #f4f4f4;
-    padding: 20px;
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
-/* Adding some padding to the main content */
-main > article, main > aside {
-    padding: 20px;
+/* Additional styling for article content */
+article h2 {
+    color: #4CAF50;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 /* Media queries for responsiveness */
